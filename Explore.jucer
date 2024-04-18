@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<JUCERPROJECT id="n1AclM" name="Explore" projectType="audioplug" useAppConfig="0"
+              addUsingNamespaceToJuceHeader="1" displaySplashScreen="1" jucerFormatVersion="1"
+              pluginAUIsSandboxSafe="1" pluginVST3Category="Delay,Fx">
+  <MAINGROUP id="iNdHhK" name="Explore">
+    <GROUP id="{1F379197-B060-98F9-3D93-D0EFB70C3E7F}" name="Assets">
+      <FILE id="lLMTLV" name="rocket.png" compile="0" resource="1" file="Source/Assets/rocket.png"/>
+      <FILE id="VlsQAS" name="space.jpg" compile="0" resource="1" file="Source/Assets/space.jpg"/>
+    </GROUP>
+    <GROUP id="{FDC08E17-A61E-7E39-4787-19BF2E5CB1A7}" name="Source">
+      <FILE id="SJj7Ax" name="PluginProcessor.cpp" compile="1" resource="0"
+            file="Source/PluginProcessor.cpp"/>
+      <FILE id="LnLkGO" name="PluginProcessor.h" compile="0" resource="0"
+            file="Source/PluginProcessor.h"/>
+      <FILE id="RgNK86" name="PluginEditor.cpp" compile="1" resource="0"
+            file="Source/PluginEditor.cpp"/>
+      <FILE id="RahQSI" name="PluginEditor.h" compile="0" resource="0" file="Source/PluginEditor.h"/>
+    </GROUP>
+    <FILE id="WcvhCv" name="CircularBuffer.cpp" compile="1" resource="0"
+          file="Source/CircularBuffer.cpp"/>
+    <FILE id="Q7QwOk" name="CircularBuffer.h" compile="0" resource="0"
+          file="Source/CircularBuffer.h"/>
+    <FILE id="VAdHVI" name="ConfigurableSlider.h" compile="0" resource="0"
+          file="Source/ConfigurableSlider.h"/>
+    <FILE id="lHroKv" name="LowpassHighpassFilter.cpp" compile="1" resource="0"
+          file="Source/LowpassHighpassFilter.cpp"/>
+    <FILE id="L4XayV" name="LowpassHighpassFilter.h" compile="0" resource="0"
+          file="Source/LowpassHighpassFilter.h"/>
+    <FILE id="MHqtz9" name="XyPad.cpp" compile="1" resource="0" file="Source/XyPad.cpp"/>
+    <FILE id="sORwy3" name="XyPad.h" compile="0" resource="0" file="Source/XyPad.h"/>
+  </MAINGROUP>
+  <MODULES>
+    <MODULE id="juce_audio_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_devices" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_formats" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_plugin_client" showAllCode="1" useLocalCopy="0"
+            useGlobalPath="1"/>
+    <MODULE id="juce_audio_processors" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_utils" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_core" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_data_structures" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_events" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_graphics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_extra" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+  </MODULES>
+  <JUCEOPTIONS JUCE_STRICT_REFCOUNTEDPOINTER="1" JUCE_VST3_CAN_REPLACE_VST2="0"/>
+  <EXPORTFORMATS>
+    <XCODE_MAC targetFolder="Builds/MacOSX">
+      <CONFIGURATIONS>
+        <CONFIGURATION isDebug="1" name="Debug" targetName="Explore"/>
+        <CONFIGURATION isDebug="0" name="Release" targetName="Explore"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_audio_basics" path="../../../../Desktop/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_devices" path="../../../../Desktop/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_formats" path="../../../../Desktop/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_plugin_client" path="../../../../Desktop/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_processors" path="../../../../Desktop/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_utils" path="../../../../Desktop/JUCE/modules"/>
+        <MODULEPATH id="juce_core" path="../../../../Desktop/JUCE/modules"/>
+        <MODULEPATH id="juce_data_structures" path="../../../../Desktop/JUCE/modules"/>
+        <MODULEPATH id="juce_events" path="../../../../Desktop/JUCE/modules"/>
+        <MODULEPATH id="juce_graphics" path="../../../../Desktop/JUCE/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="../../../../Desktop/JUCE/modules"/>
+        <MODULEPATH id="juce_gui_extra" path="../../../../Desktop/JUCE/modules"/>
+      </MODULEPATHS>
+    </XCODE_MAC>
+  </EXPORTFORMATS>
+</JUCERPROJECT>
